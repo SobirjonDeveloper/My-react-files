@@ -1,20 +1,12 @@
-import React ,{Component} from "react"
+import GreenChild from "./green-child";
+import GreenParent from "./green-parent";
 
+const App = () => {
+  return (
+    <div style={{ margin: "31px auto", width: "60%" }}>
+      <GreenParent />
+    </div>
+  );
+};
 
-class Student extends Component{
-  render(){
-    return(
-      <div>Sobirjon is {this.props.title}</div>
-    )
-  }
-}
-export default Student
-
-class Parent extends Component{
-  render(){
-    return(
-      <div>parent and {this.props.children}</div>
-    )
-  }
-}
-export {Parent}
+export default App;

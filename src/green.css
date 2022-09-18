@@ -1,0 +1,16 @@
+.Wrapper {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+.wrap {
+  display: flex;
+}
+.btn01 {
+  background-color: rgba(0, 128, 0, 0.628);
+  border-radius: 15px;
+}
+.btn1 {
+  background-color: rgba(0, 128, 0, 0.628);
+  border-radius: 15px;
+}
