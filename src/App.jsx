@@ -3,7 +3,7 @@ import GreenParent from "./green-parent";
 
 const App = () => {
   return (
-    <div style={{ margin: "31px auto", width: "60%" }}>
+    <div style={{ margin: "30px auto", width: "60%" }}>
       <GreenParent />
     </div>
   );
