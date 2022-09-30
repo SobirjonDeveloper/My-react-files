@@ -48,7 +48,7 @@ export default class Line extends Component {
             <td>EDIT</td>
           </tr>
           <tr>
-            {/* <td>9</td> */}
+            <td>9</td>
             <td>Abduqodir Abdullayev</td>
             <td>15</td>
             <td>ToshkentUzbekistan</td>
