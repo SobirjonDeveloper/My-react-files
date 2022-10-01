@@ -2,6 +2,26 @@ th {
   width: 400px;
   height: 30px;
 }
-ifram {
+.sobir {
   display: block;
+  margin: 270px 300px;
+}
+.s {
+  background-color: orange;
+}
+.ss {
+  background-color: darkolivegreen;
+}
+button {
+  background-color: aqua;
+  border: grey 0.5px solid grey;
+}
+/* 
+td {
+  border: 1px solid grey;
+} */
+
+td {
+  gap: 1px;
+  border: 1px grey solid;
 }

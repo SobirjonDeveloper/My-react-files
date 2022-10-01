@@ -6,8 +6,8 @@ export default class Line extends Component {
   render() {
     return (
       <div className="Line">
-        <ifram src="sobir" frameborder="1">
-          <tr>
+        <ifram src="sobir" frameborder="1" className="sobir">
+          <tr className="s">
             <td>ID</td>
             <td>NAME</td>
             <td>AGE</td>
@@ -15,7 +15,7 @@ export default class Line extends Component {
             <td>STATUS</td>
             <td>NICKNAME</td>
             <td>UNIV</td>
-            <td>EDIT</td>
+            <button>EDIT</button>
           </tr>
           <tr>
             <td>6</td>
@@ -25,9 +25,9 @@ export default class Line extends Component {
             <td>Student</td>
             <td>Ali</td>
             <td>sejong</td>
-            <td>EDIT</td>
+            <button>EDIT</button>
           </tr>
-          <tr>
+          <tr className="ss">
             <td>7</td>
             <td>Odina Saidnazarova</td>
             <td>15</td>
@@ -35,7 +35,7 @@ export default class Line extends Component {
             <td>Student</td>
             <td>Bonu</td>
             <td>Sejong</td>
-            <td>EDIT</td>
+            <button>EDIT</button>
           </tr>
           <tr>
             <td>8</td>
@@ -45,7 +45,7 @@ export default class Line extends Component {
             <td>student</td>
             <td>Xusanov</td>
             <td>Sejong</td>
-            <td>EDIT</td>
+            <button>EDIT</button>
           </tr>
           <tr>
             <td>9</td>
@@ -55,7 +55,7 @@ export default class Line extends Component {
             <td>student</td>
             <td>Abduqodir</td>
             <td>Sejong</td>
-            <td>EDIT</td>
+            <button>EDIT</button>
           </tr>
         </ifram>
       </div>
