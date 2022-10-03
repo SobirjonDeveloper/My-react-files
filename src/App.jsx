@@ -20,7 +20,7 @@ export default class Line extends Component {
           <tr>
             <td>6</td>
             <td>Sobirjon Fayzullayev</td>
-            <td>26</td>
+            {/* <td>26</td> */}
             <td>Toshkent Uzbekistan</td>
             <td>Student</td>
             <td>Ali</td>
