@@ -1,64 +1,68 @@
-import React, { Component } from "react";
-import "./style.css";
-// import React, { Component } from "react";
-
-export default class Line extends Component {
+import React from "react";
+import { Student } from "./Data";
+import { Hooks } from "./Hooks";
+class App extends React.Component {
+  constructor(props) {
+    super();
+    this.state = {
+      data: Student,
+      count: 0,
+    };
+  }
   render() {
+    // const plus = () => {
+    //   this.setState({ count: this.state.count + 1 });
+    // };
+    // const minus = () => {
+    //   this.setState({ count: this.state.count - 1 });
+    // };
+
     return (
-      <div className="Line">
-        <ifram src="sobir" frameborder="1" className="sobir">
-          <tr className="s">
-            <td>ID</td>
-            <td>NAME</td>
-            <td>AGE</td>
-            <td>ADDRESS</td>
-            <td>STATUS</td>
-            <td>NICKNAME</td>
-            <td>UNIV</td>
-            <button>EDIT</button>
-          </tr>
+      <div>
+        <div>
+          <input width={300} type="text" placeholder="Enter your name " />
+          <input
+            type="text"
+            placeholder="Enter your phone number"
+            width={300}
+          />
+          <input type="text" placeholder="status" width={300} />
+        </div>
+        <table border={2}>
           <tr>
-            <td>6</td>
-            <td>Sobirjon Fayzullayev</td>
-            <td>26</td>
-            <td>Toshkent Uzbekistan</td>
-            <td>Student</td>
-            <td>Ali</td>
-            <td>sejong</td>
-            <button>EDIT</button>
+            <th width={300}>ID</th>
+            <th width={300}>NAME</th>
+            <th width={300}>PHONE</th>
+            <th width={300}>STATUS</th>
           </tr>
-          <tr className="ss">
-            <td>7</td>
-            <td>Odina Saidnazarova</td>
-            <td>15</td>
-            <td>Toshkent Uzbekistan</td>
-            <td>Student</td>
-            <td>Bonu</td>
-            <td>Sejong</td>
-            <button>EDIT</button>
-          </tr>
-          <tr>
-            <td>8</td>
-            <td>SHoaziz Xusanov</td>
-            <td>16</td>
-            <td>Toshkent Uzbekistan</td>
-            <td>student</td>
-            <td>Xusanov</td>
-            <td>Sejong</td>
-            <button>EDIT</button>
-          </tr>
-          <tr>
-            <td>9</td>
-            <td>Abduqodir Abdullayev</td>
-            <td>15</td>
-            <td>ToshkentUzbekistan</td>
-            <td>student</td>
-            <td>Abduqodir</td>
-            <td>Sejong</td>
-            <button>EDIT</button>
-          </tr>
-        </ifram>
+
+          {this.state.data.map((value) => {
+            return (
+              <tr key={value.id}>
+                <td>{value.id}</td>
+                <td>{value.name}</td>
+                <td>{value.phone}</td>
+                <td>{value.status}</td>
+                <td>
+                  <button
+                    onClick={() => {
+                      let res = this.state.data.filter(
+                        (Student) => value.id !== Student.id
+                      );
+                      this.setState({ data: res });
+                    }}
+                  >
+                    Delete
+                  </button>
+                </td>
+              </tr>
+            );
+          })}
+        </table>
+
+        <Hooks />
       </div>
     );
   }
 }
+export { App };
