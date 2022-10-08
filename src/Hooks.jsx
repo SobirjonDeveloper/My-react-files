@@ -7,7 +7,7 @@ export const Hooks = (props) => {
   const [option, setOption] = useState(1);
 
   const [data, use] = useReducer((state, payload) => {
-    console.log(payload.type);
+    // console.log(payload.type);
     switch (payload.type) {
       case "plus":
         return state + 1;
