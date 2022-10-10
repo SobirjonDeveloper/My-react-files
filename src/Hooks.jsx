@@ -33,7 +33,7 @@ export const Hooks = (props) => {
     <div>
       <h1>Hooks Component useReducer</h1>
       <h1>State {count}</h1>
-      {/* <button onClick={plus}>+</button> */}
+      <button onClick={plus}>+</button>
       <div>
         <select defaultValue={1} name="" id="">
           <option value="1">1</option>
