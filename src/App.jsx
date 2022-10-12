@@ -30,7 +30,7 @@ class App extends React.Component {
         </div>
         <table border={2}>
           <tr>
-            {/* <th width={300}>ID</th> */}
+            <th width={300}>ID</th>
             <th width={300}>NAME</th>
             <th width={300}>PHONE</th>
             <th width={300}>STATUS</th>
