@@ -20,13 +20,11 @@ class App extends React.Component {
     return (
       <div>
         <div>
-          <input width={300} type="text" placeholder="Enter your name " />
-          <input
-            type="text"
-            placeholder="Enter your phone number"
-            width={300}
-          />
-          <input type="text" placeholder="status" width={300} />
+          <h1>Id:{this.state.data.length}</h1>
+          <h1>Home</h1>
+          <h1>About</h1>
+          <h1>Clases</h1>
+          <h1>Concat</h1>
         </div>
         <table border={2}>
           <tr>
