@@ -6,7 +6,7 @@ export const Oylik = (createContext = data);
 const Context = ({ children }) => {
   return (
     <Oylik .Provider>
-      // Context
+      Context
       {children}
     </Oylik>
   );
