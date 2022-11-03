@@ -8,7 +8,7 @@ const Context = ({ children }) => {
     <Oylik .Provider>
       // Context.
       {children}
-    </Oylik>
+    // </Oylik>
   );
 };
 
