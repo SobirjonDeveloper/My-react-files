@@ -1,66 +1,35 @@
 import React from "react";
-import { Student } from "./Data";
-import { Hooks } from "./Hooks";
+
 class App extends React.Component {
-  constructor(props) {
-    super();
-    this.state = {
-      data: Student,
-      count: 0,
-    };
-  }
   render() {
-    // const plus = () => {
-    //   this.setState({ count: this.state.count + 1 });
-    // };
-    // const minus = () => {
-    //   this.setState({ count: this.state.count - 1 });
-    // };
-
     return (
-      <div>
-        <div>
-          <h1>Id:{this.state.data.length}</h1>
-          <h1>Home</h1>
-          <h1>About</h1>
-          <h1>Clases</h1>
-          <h1>Concat</h1>
-        </div>
-        <table border={2}>
-          <tr>
-            <th width={300}>ID</th>
-            <th width={300}>NAME</th>
-            <th width={300}>PHONE</th>
-            <th width={300}>STATUS</th>
-          </tr>
+      <div className="wrapper">
+        <App
+          src="https://cdn.pixabay.com/photo/2016/11/29/03/53/house-1867187__340.jpg"
+          title="New Apartment Nice Wiev"
+          title2="Quincy ST, Brooklyn, NY, USA"
+          title3="$2,800/mo"
+          title4="$7500/mo"
+        />
 
-          {this.state.data.map((value) => {
-            return (
-              <tr key={value.id}>
-                <td>{value.id}</td>
-                <td>{value.name}</td>
-                <td>{value.phone}</td>
-                <td>{value.status}</td>
-                <td>
-                  <button
-                    onClick={() => {
-                      let res = this.state.data.filter(
-                        (Student) => value.id !== Student.id
-                      );
-                      this.setState({ data: res });
-                    }}
-                  >
-                    Delete
-                  </button>
-                </td>
-              </tr>
-            );
-          })}
-        </table>
+        <App
+          src="https://cdn.pixabay.com/photo/2016/12/30/07/59/kitchen-1940174__340.jpg"
+          title="New Apartment Nice Wiev"
+          title2="Quincy ST, Brooklyn, NY, USA"
+          title3="$2,800/mo"
+          title4="$7500/mo"
+        />
 
-        <Hooks />
+        <App
+          src="https://cdn.pixabay.com/photo/2017/08/27/10/16/interior-2685521__340.jpg"
+          title="New Apartment Nice Wiev"
+          title2="Quincy ST, Brooklyn, NY, USA"
+          title3="$2,800/mo"
+          title4="$7500/mo"
+        />
       </div>
     );
   }
 }
-export { App };
+
+export default App;
