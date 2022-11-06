@@ -9,7 +9,7 @@ class App extends React.Component {
           title="New Apartment Nice Wiev"
           title2="Quincy ST, Brooklyn, NY, USA"
           title3="$2,800/mo"
-          // title4="$7500/mo"
+          title4="$7500/mo"
         />
 
         <App
