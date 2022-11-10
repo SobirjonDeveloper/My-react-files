@@ -11,26 +11,29 @@ class App extends React.Component {
   }
   render() {
     return (
-      <div>
-        {this.state.Student.map((std) => {
-          return (
-            <table border={1}>
-              {/* <tr>
-                <th>ID</th>
-                <th>NAME</th>
-                <th>PHONE</th>
-                <th>STATUS</th>
-              </tr> */}
-              <tr className="wrap">
+      <table border={1}>
+        <thead>
+          <tr>
+            <th width={225}>ID</th>
+            <th width={225}>NAME</th>
+            <th width={225}>PHONE</th>
+            <th width={225}>STATUS</th>
+          </tr>
+        </thead>
+        <tbody>
+          {this.state.Student.map((std) => {
+            return (
+              <tr className="wrap" key={std.id}>
                 <td width={50}>{std.id}</td>
                 <td width={300}>{std.name}</td>
-                <td width={200}>{std.phone}</td>
-                <td width={130}>{std.status}</td>
+                {/* <td width={200}>{std.phone}</td> */}
+                <td width={150}>{std.status}</td>
                 <td width={200}>
                   <button
+                    className="trash"
                     onClick={() => {
                       let res = this.state.Student.filter(
-                        (value) => value.id !== Student.id
+                        (value) => value.id !== std.id
                       );
                       this.setState({ Student: res });
                     }}
@@ -39,10 +42,10 @@ class App extends React.Component {
                   </button>
                 </td>
               </tr>
-            </table>
-          );
-        })}
-      </div>
+            );
+          })}
+        </tbody>
+      </table>
     );
   }
 }

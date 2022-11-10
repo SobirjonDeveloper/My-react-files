@@ -1,11 +1,23 @@
 td {
-  align-items: center;
-  justify-content: center;
+  text-align: center;
   background-color: goldenrod;
-}
-table {
-  border: none goldenrod;
 }
 button {
   width: 200px;
+}
+.trash {
+  border: 5px solid rgb(255, 255, 255);
+  background-color: white;
+  border-radius: 25px;
+  color: red;
+  margin-left: 5px;
+  transition: 0.2s ease-in-out;
+}
+
+.trash:hover {
+  color: white;
+  background-color: #ff2121;
+  border: 5px solid #ff2121;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
 }
