@@ -26,7 +26,7 @@ class App extends React.Component {
               <tr className="wrap" key={std.id}>
                 <td width={50}>{std.id}</td>
                 <td width={300}>{std.name}</td>
-                {/* // <td width={200}>{std.phone}</td> */}
+                // <td width={200}>{std.phone}</td>
                 <td width={150}>{std.status}</td>
                 <td width={200}>
                   <button
